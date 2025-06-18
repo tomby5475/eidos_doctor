@@ -4,7 +4,7 @@ import { Card, CardContent } from "../../../../components/ui/card";
 
 export const InterviewsSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-8 px-4 py-8 w-full">
+    <section id="interview" className="flex flex-col items-center gap-8 px-4 py-8 w-full">
       <header className="flex flex-col items-center gap-4 w-full">
         <p className="w-full font-['Inter',Helvetica] font-bold text-[#e10091] text-base text-center leading-6">
           Next step

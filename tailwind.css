@@ -21,6 +21,7 @@
   --default-regular-body-letter-spacing: -0.40799999237060547px;
   --default-regular-body-line-height: 22px;
   --label-colordarkprimary: rgba(255, 255, 255, 1);
+  scroll-behavior: smooth;
 }
 
 @tailwind base;

@@ -1,0 +1,60 @@
+.buttonCustom {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 179px;
+  height: 41px;
+  padding: 12px;
+  border-radius: 8px;
+
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #ffffff;
+  background-color: #8462d6;
+
+  box-shadow: inset 0px 2px 0px 0px #ffffff40;
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  z-index: 1;
+}
+
+.buttonCustom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1px;
+  background: linear-gradient(180deg, #41238c 0%, #8462d6 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+.buttonCustom:hover {
+  background-color: #6441af;
+  color: #ffffff;
+
+  /* keep border gradient and shadow */
+  border-image-source: linear-gradient(180deg, #41238c 0%, #8462d6 100%);
+  box-shadow: inset 0px 2px 0px 0px #ffffff40;
+}
+
+.buttonCustom:active {
+  background-color: #4b2896;
+  color: #e6d7ff;
+
+  border-image-source: linear-gradient(180deg, #41238c 0%, #8462d6 100%);
+  box-shadow: inset 0px 2px 0px 0px #ffffff40;
+}

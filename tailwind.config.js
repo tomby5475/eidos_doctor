@@ -42,10 +42,20 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      scrollBehavior: {
+        smooth: "smooth",
+        auto: "auto",
+      },
+      container: {
+        center: true,
+        padding: "2rem",
+        screens: { "2xl": "1400px" },
+      },
       fontFamily: {
         "caption-12-16": "var(--caption-12-16-font-family)",
         "default-regular-body": "var(--default-regular-body-font-family)",
         sans: [
+          "Inter",
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
@@ -75,7 +85,11 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-    container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+  },
+  variants: {
+    extend: {
+      scrollBehavior: ["responsive"],
+    },
   },
   plugins: [],
   darkMode: ["class"],

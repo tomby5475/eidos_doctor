@@ -2,13 +2,13 @@ import React from "react";
 
 export const TitleSection = (): JSX.Element => {
   return (
-    <section className="px-4 py-8 flex flex-col items-center gap-4 w-full">
+    <section id="portfolio" className="px-4 py-8 flex flex-col items-center gap-4 w-full">
       <div className="relative">
-        <p className="font-bold text-[#e10091] text-base text-center leading-6 font-sans">
+        <p className="font-inter font-bold text-[16px] leading-[24px] tracking-normal text-center text-[#e10091]">
           One-on-one. Free of charge.
         </p>
         <img
-          className="absolute w-[119px] h-[7px] top-[24px] left-1/2 -translate-x-1/2"
+          className="absolute w-[116px] h-[7px] top-[24px] left-[73%] -translate-x-1/2"
           alt="Decorative underline"
           src="/vector-5.svg"
         />

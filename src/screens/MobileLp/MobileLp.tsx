@@ -14,20 +14,27 @@ export const MobileLp = (): JSX.Element => {
     <div className="flex flex-col items-start relative bg-white">
       <header className="flex items-center justify-between px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-white shadow-[0px_1px_0px_#e4e4e4]">
         <div className="relative w-32 h-[22.84px]">
-          <div className="relative h-[18px] top-0.5">
-            <img
-              className="absolute h-[18px] top-0 left-[60px]"
-              alt="Doctor"
-              src="/logoEidos.png"
-            />
-          </div>
+          <img
+            className="h-[18px] object-contain"
+            alt="Doctor"
+            src="/logoEidos.png"
+          />
         </div>
-
-        <Button className="bg-[#8462d6] text-white font-bold text-sm shadow-[inset_0px_2px_0px_#ffffff40]">
-          Accelerate Job Search
+        <nav className="hidden md:flex gap-4 font-inter font-bold text-[14px] leading-[100%] tracking-normal text-[#322D2D]">
+          <a href="#portfolio">Design Portfolio & CV Doctor</a>
+          <a href="#interview">Interview Training</a>
+          <a href="#community">Design Community</a>
+        </nav>
+        <Button asChild variant="custom">
+          <a
+            href="https://eidosdesign.substack.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Accelerate Job Search
+          </a>
         </Button>
       </header>
-
       <TitleSection />
       <ImageSection />
       <TitleWrapperSection />
