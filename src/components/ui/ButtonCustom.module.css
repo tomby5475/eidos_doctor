@@ -58,3 +58,8 @@
   border-image-source: linear-gradient(180deg, #41238c 0%, #8462d6 100%);
   box-shadow: inset 0px 2px 0px 0px #ffffff40;
 }
+
+.buttonCustomLarge {
+  width: 231px;
+  height: 54px;
+}

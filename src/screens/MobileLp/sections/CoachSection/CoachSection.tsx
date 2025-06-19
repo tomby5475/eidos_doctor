@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
+import styles from "../../../../../src/components/ui/ButtonCustom.module.css";
 import {
   Avatar,
   AvatarFallback,
@@ -17,7 +18,7 @@ export const CoachSection = (): JSX.Element => {
     links: [
       { name: "LinkedIn", url: "https://www.linkedin.com/in/vadimgrin/" },
       { name: "Substack", url: "https://eidosdesign.substack.com/" },
-      { name: "Book", url: "#" },
+      { name: "Book", url: "https://bit.ly/3ZsUQS4" },
     ],
     avatar: "/ellipse-3.png",
   };
@@ -62,15 +63,17 @@ export const CoachSection = (): JSX.Element => {
           </div>
         </div>
       </CardContent>
-      <Button asChild variant="custom">
-        <a
-          href="https://eidosdesign.substack.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Accelerate Job Search
-        </a>
-      </Button>
+      <div className="flex justify-center pb-6">
+        <Button asChild variant="custom" className={styles.buttonCustomLarge}>
+          <a
+            href="https://eidosdesign.substack.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Accelerate Job Search
+          </a>
+        </Button>
+      </div>
     </Card>
   );
 };
