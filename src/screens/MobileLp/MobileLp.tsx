@@ -11,8 +11,9 @@ import { TitleWrapperSection } from "./sections/TitleWrapperSection";
 
 export const MobileLp = (): JSX.Element => {
   return (
-    <div className="flex flex-col items-start relative bg-white">
-      <header className="flex items-center justify-between px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-white shadow-[0px_1px_0px_#e4e4e4]">
+    <div className="w-full bg-white-100">
+      {/* Full-width background */}
+      <header className="flex items-center justify-between px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-white shadow-[0px_1px_0px_#e4e4e4] ">
         <div className="relative w-32 h-[22.84px]">
           <img
             className="h-[18px] object-contain"
@@ -35,14 +36,18 @@ export const MobileLp = (): JSX.Element => {
           </a>
         </Button>
       </header>
-      <TitleSection />
-      <ImageSection />
-      <TitleWrapperSection />
-      <CoachSection />
-      <HowItWorksSection />
-      <SocialSection />
-      <InterviewsSection />
-      <CommunitySection />
+
+      {/* Centered max-width container for all sections */}
+      <main className="max-w-[393px] w-full mx-auto flex flex-col">
+        <TitleSection />
+        <ImageSection />
+        <TitleWrapperSection />
+        <CoachSection />
+        <HowItWorksSection />
+        <SocialSection />
+        <InterviewsSection />
+        <CommunitySection />
+      </main>
     </div>
   );
 };

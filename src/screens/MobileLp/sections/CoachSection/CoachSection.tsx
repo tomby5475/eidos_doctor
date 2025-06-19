@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../../../../components/ui/button";
 import {
   Avatar,
   AvatarFallback,
@@ -14,8 +15,8 @@ export const CoachSection = (): JSX.Element => {
     description:
       "15 years of experience, 5 years of teaching. Author of Emotional Digital Design.",
     links: [
-      { name: "LinkedIn", url: "#" },
-      { name: "Substack", url: "#" },
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/vadimgrin/" },
+      { name: "Substack", url: "https://eidosdesign.substack.com/" },
       { name: "Book", url: "#" },
     ],
     avatar: "/ellipse-3.png",
@@ -50,6 +51,8 @@ export const CoachSection = (): JSX.Element => {
                 <a
                   key={index}
                   href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-medium text-[#322d2d] text-sm text-center leading-6 underline whitespace-nowrap font-sans"
                 >
                   {link.name}
@@ -59,6 +62,15 @@ export const CoachSection = (): JSX.Element => {
           </div>
         </div>
       </CardContent>
+      <Button asChild variant="custom">
+        <a
+          href="https://eidosdesign.substack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Accelerate Job Search
+        </a>
+      </Button>
     </Card>
   );
 };

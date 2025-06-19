@@ -2,7 +2,7 @@ import React from "react";
 
 export const TitleWrapperSection = (): JSX.Element => {
   return (
-    <section className="py-8 px-4 flex flex-col items-center gap-4 w-full">
+    <section className="py-8 px-4 flex flex-col items-center gap-4">
       <h3 className="w-full font-bold text-[#e10091] text-base text-center leading-6">
         How it works
       </h3>
@@ -17,6 +17,16 @@ export const TitleWrapperSection = (): JSX.Element => {
         pass an initial screening! With our help, your portfolio and CV will be
         so impressive that no company will be able to resist.
       </p>
+
+      <div className="relative aspect-[16/9] w-[361px] h-[420px] rounded-lg overflow-hidden">
+        <iframe
+          src="https://www.loom.com/embed/5069daf9acc44b43a95586a281ce7826?sid=85761799-59e9-43e0-83aa-09517804f518"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="absolute top-0 left-0 w-full h-full"
+         
+        ></iframe>
+      </div>
     </section>
   );
 };
