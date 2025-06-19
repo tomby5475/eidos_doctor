@@ -21,8 +21,8 @@ export const HowItWorksSection = (): JSX.Element => {
     {
       bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-10.svg",
-      iconPosition: { top: "3", left: "3" },
-      iconSize: { width: "6", height: "[22px]" },
+      iconClass: "w-[24px] h-[22px]",
+      iconPositionClass: "top-3 left-3",
       title: "Subscribe",
       content: (
         <>
@@ -30,11 +30,16 @@ export const HowItWorksSection = (): JSX.Element => {
             This service is completely free of charge.
           </span>
           <span className="font-medium text-[#565f6e]">
-            {" "}
             <br />
             The only requirement is that you be a member of the{" "}
           </span>
           <span className="font-medium text-[#783cf5] underline">
+            <a
+              href="https://eidosdesign.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#5a28c6]"
+            ></a>
             Eidos Design
           </span>
           <span className="font-medium text-[#565f6e]"> community.</span>
@@ -42,18 +47,20 @@ export const HowItWorksSection = (): JSX.Element => {
       ),
     },
     {
-      bgImage: "/ellipse-8-1.svg",
+      bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-8.svg",
-      iconPosition: { top: "[11px]", left: "[13px]" },
-      iconSize: { width: "6", height: "[23px]" },
+      iconPositionClass: "top-3 left-3",
+      iconClass: "w-[24px] h-[22px]",
       title: "Request",
       content: (
         <>
-          <span className="font-medium">
+          <span className="font-medium text-[#565f6e]">
             After subscribing, you will receive a welcome message. It will
             contain instructions, but, long story short:{" "}
           </span>
-          <span className="font-bold">just reply with your request!</span>
+          <span className="font-bold text-[#565f6e]">
+            just reply with your request!
+          </span>
         </>
       ),
     },
@@ -61,10 +68,10 @@ export const HowItWorksSection = (): JSX.Element => {
 
   const benefitCards = [
     {
-      bgImage: "/ellipse-8-3.svg",
+      bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-9.svg",
-      iconPosition: { top: "[13px]", left: "[13px]" },
-      iconSize: { width: "6", height: "[19px]" },
+      iconPositionClass: "top-3 left-3",
+      iconClass: "w-[24px] h-[22px]",
       title: "Feedback within 48 hours",
       content: (
         <>
@@ -80,10 +87,10 @@ export const HowItWorksSection = (): JSX.Element => {
       ),
     },
     {
-      bgImage: "/ellipse-8-2.svg",
+      bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-3.svg",
-      iconPosition: { top: "3", left: "[13px]" },
-      iconSize: { width: "6", height: "6" },
+      iconPositionClass: "top-3 left-3",
+      iconClass: "w-[24px] h-[22px]",
       title: "Detailed report, video and action items",
       content: (
         <>
@@ -129,11 +136,12 @@ export const HowItWorksSection = (): JSX.Element => {
             <Card key={index} className="w-full border-[#e6e6e6]">
               <CardContent className="flex flex-col items-start gap-8 p-6">
                 <div
-                  className={`bg-[url(${card.bgImage})] relative w-12 h-12 bg-[100%_100%]`}
+                  className="relative w-12 h-12 bg-no-repeat bg-center bg-contain"
+                  style={{ backgroundImage: `url(${card.bgImage})` }}
                 >
                   <img
-                    className={`absolute w-${card.iconSize.width} h-${card.iconSize.height} top-${card.iconPosition.top} left-${card.iconPosition.left}`}
-                    alt="Vector"
+                    className={`absolute ${card.iconClass} ${card.iconPositionClass}`}
+                    alt="Icon"
                     src={card.iconSrc}
                   />
                 </div>
@@ -176,11 +184,12 @@ export const HowItWorksSection = (): JSX.Element => {
             <Card key={index} className="w-full border-[#e6e6e6]">
               <CardContent className="flex flex-col items-start gap-8 p-6">
                 <div
-                  className={`bg-[url(${card.bgImage})] relative w-12 h-12 bg-[100%_100%]`}
+                  className="relative w-12 h-12 bg-no-repeat bg-center bg-contain"
+                  style={{ backgroundImage: `url(${card.bgImage})` }}
                 >
                   <img
-                    className={`absolute w-${card.iconSize.width} h-${card.iconSize.height} top-${card.iconPosition.top} left-${card.iconPosition.left}`}
-                    alt="Vector"
+                    className={`absolute ${card.iconClass} ${card.iconPositionClass}`}
+                    alt="Icon"
                     src={card.iconSrc}
                   />
                 </div>
