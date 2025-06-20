@@ -5,13 +5,11 @@
   justify-content: center;
   gap: 10px;
 
-  width: 179px;
   height: 41px;
-  padding: 12px;
   border-radius: 8px;
 
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 14px;
   color: #ffffff;
   background-color: #8462d6;
 
@@ -60,6 +58,6 @@
 }
 
 .buttonCustomLarge {
-  width: 231px;
   height: 54px;
+  font-size: 18px;
 }

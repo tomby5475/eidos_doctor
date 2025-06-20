@@ -6,11 +6,11 @@ export const SocialSection = (): JSX.Element => {
   // Data for avatars
   const avatars = [
     { src: "/ellipse-3-1.png", alt: "User avatar" },
-    { src: "/ellipse-2.png", alt: "User avatar" },
-    { src: "/ellipse-4.png", alt: "User avatar" },
-    { src: "/ellipse-5.png", alt: "User avatar" },
-    { src: "/ellipse-6.png", alt: "User avatar" },
-    { src: "/ellipse-7.png", alt: "User avatar" },
+    { src: "/ellipse-3-2.png", alt: "User avatar" },
+    { src: "/ellipse-3-3.png", alt: "User avatar" },
+    { src: "/ellipse-3-4.png", alt: "User avatar" },
+    { src: "/ellipse-3-5.png", alt: "User avatar" },
+    { src: "/ellipse-3-6.png", alt: "User avatar" },
   ];
 
   // Data for stars
@@ -26,7 +26,8 @@ export const SocialSection = (): JSX.Element => {
               {avatars.map((avatar, index) => (
                 <Avatar
                   key={index}
-                  className={`absolute w-11 h-11 top-0 left-${index * 8}`}
+                  className="absolute w-11 h-11 top-0 ring-1 ring-white"
+                  style={{ left: `${index * 36}px`, zIndex: index }}
                 >
                   <AvatarImage
                     src={avatar.src}
@@ -69,7 +70,7 @@ export const SocialSection = (): JSX.Element => {
           {/* LinkedIn link */}
           <div className="flex items-center gap-1">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/vadimgrin/"
               className="[font-family:'Inter',Helvetica] font-medium text-[#783cf5] text-sm text-center tracking-[0] leading-6 underline"
             >
               Learn more on LinkedIn

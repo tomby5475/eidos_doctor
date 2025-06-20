@@ -1,10 +1,14 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import styles from "../../../../../src/components/ui/ButtonCustom.module.css";
 
 export const InterviewsSection = (): JSX.Element => {
   return (
-    <section id="interview" className="flex flex-col items-center gap-8 px-4 py-8 w-full">
+    <section
+      id="interview"
+      className="flex flex-col items-center gap-8 px-4 py-8 w-full"
+    >
       <header className="flex flex-col items-center gap-4 w-full">
         <p className="w-full font-['Inter',Helvetica] font-bold text-[#e10091] text-base text-center leading-6">
           Next step
@@ -23,10 +27,14 @@ export const InterviewsSection = (): JSX.Element => {
         </p>
       </header>
 
-      <div
-        className="h-[420px] rounded-[32px] w-full bg-cover bg-center"
-        style={{ backgroundImage: "url(..//video.png)" }}
-      />
+      <video
+        src="/consultation.webm"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-[361px] h-[420px] rounded-[32px] object-cover"
+      ></video>
 
       <Card className="w-full border-none shadow-none bg-transparent">
         <CardContent className="p-0">
@@ -56,9 +64,18 @@ export const InterviewsSection = (): JSX.Element => {
       </Card>
 
       <div className="flex flex-col items-center w-full">
-        <Button className="p-4 bg-[#8462d6] text-white font-['Inter',Helvetica] font-bold text-lg rounded-lg shadow-[inset_0px_2px_0px_#ffffff40]">
-          Schedule Training
-        </Button>
+        <div className="flex justify-center pb-6">
+          <Button asChild variant="custom" className={styles.buttonCustomLarge}>
+            <a
+              href="https://eidosdesign.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4"
+            >
+              Schedule Training
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );

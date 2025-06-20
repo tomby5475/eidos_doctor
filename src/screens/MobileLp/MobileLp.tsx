@@ -31,6 +31,7 @@ export const MobileLp = (): JSX.Element => {
             href="https://eidosdesign.substack.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-3"
           >
             Accelerate Job Search
           </a>
