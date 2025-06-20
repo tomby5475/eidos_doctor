@@ -24,7 +24,8 @@ const messages = [
 
 export const ImageSection = (): JSX.Element => {
   return (
-    <div className="flex flex-col gap-6 px-4 py-8 w-full">
+    <div className="bg-crosses w-full">
+    <div className="flex flex-col gap-6 px-4 py-8 ">
       {messages.map((message, index) => (
         <div
           key={index}
@@ -76,6 +77,7 @@ export const ImageSection = (): JSX.Element => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
