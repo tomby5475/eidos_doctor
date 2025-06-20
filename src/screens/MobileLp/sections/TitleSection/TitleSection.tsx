@@ -11,9 +11,9 @@ export const TitleSection = (): JSX.Element => {
           One-on-one. Free of charge.
         </p>
         <img
-          className="absolute w-[180px] max-w-none h-[7px] top-[24px] left-[73%] -translate-x-1/2"
+          className="absolute max-w-none h-[7px] top-[24px] left-[73%] -translate-x-1/2"
           alt="Decorative underline"
-          src="/vector-5.svg"
+          src="/vectorUnderline.svg"
         />
       </div>
       <h1 className="font-['Asap',Helvetica] font-bold text-[#2d323c] text-[48px] text-center leading-tight">

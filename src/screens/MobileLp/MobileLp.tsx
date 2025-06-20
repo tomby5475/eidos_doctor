@@ -13,12 +13,13 @@ export const MobileLp = (): JSX.Element => {
   return (
     <div className="w-full bg-white-100">
       {/* Full-width background */}
-      <header className="flex items-center justify-between px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-white shadow-[0px_1px_0px_#e4e4e4] ">
+      <div>
+      <header className="flex items-center justify-between px-4 py-3 relative self-stretch max-w-[393px] w-full mx-auto flex-[0_0_auto] bg-white shadow-[0px_1px_0px_#e4e4e4] ">
         <div className="relative w-32 h-[22.84px]">
           <img
             className="h-[18px] object-contain"
             alt="Doctor"
-            src="/logoEidos.png"
+            src="/logoLila.svg"
           />
         </div>
         <nav className="hidden md:flex gap-4 font-inter font-bold text-[14px] leading-[100%] tracking-normal text-[#322D2D]">
@@ -37,6 +38,7 @@ export const MobileLp = (): JSX.Element => {
           </a>
         </Button>
       </header>
+      </div>
 
       {/* Centered max-width container for all sections */}
       <main className="max-w-[393px] w-full mx-auto flex flex-col">
