@@ -69,7 +69,7 @@ export const CoachSection = (): JSX.Element => {
             href="https://eidosdesign.substack.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4"
+            className="px-4 mt-8"
           >
             Accelerate Job Search
           </a>

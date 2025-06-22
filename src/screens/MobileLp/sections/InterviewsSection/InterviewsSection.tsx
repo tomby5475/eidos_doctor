@@ -34,7 +34,7 @@ export const InterviewsSection = (): JSX.Element => {
           loop
           muted
           playsInline
-          className="w-[361px] h-[420px] rounded-[32px] object-cover"
+          className="w-[361px] h-[420px] rounded-[32px] object-cover my-8 mx-auto"
         ></video>
 
         <Card className="w-full border-none shadow-none bg-transparent">
@@ -66,7 +66,7 @@ export const InterviewsSection = (): JSX.Element => {
         </Card>
 
         <div className="flex flex-col items-center w-full">
-          <div className="flex justify-center pb-6">
+          <div className="flex justify-center pt-8">
             <Button
               asChild
               variant="custom"

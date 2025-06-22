@@ -4,7 +4,7 @@ import React from "react";
 const messages = [
   {
     sender: "other",
-    text: "Yes, please! Thank you! I'm sharing the link now ❤",
+    text: "Yes, please! Thank you! I'm sharing the link now ❤️",
     avatar: "/photo-1.png",
   },
   {
@@ -53,11 +53,11 @@ export const ImageSection = (): JSX.Element => {
           <div className="flex items-end w-full">
             {message.sender === "other" && (
               <div className="flex flex-col w-px h-5 items-start">
-                <img
+                {/* <img
                   className="mb-[-0.32px] relative w-[16.42px] h-[20.32px] ml-[-5.00px] mr-[-10.42px]"
                   alt="Container"
                   src="/container.svg"
-                />
+                /> */}
               </div>
             )}
 
@@ -75,11 +75,11 @@ export const ImageSection = (): JSX.Element => {
 
             {message.sender === "self" && (
               <div className="mr-[-0.90px] rotate-180 flex flex-col w-px h-5 items-start">
-                <img
+                {/* <img
                   className="mt-[-0.32px] -rotate-180 relative w-[16.42px] h-[20.32px] ml-[-5.00px] mr-[-10.42px]"
                   alt="Container"
                   src="/container-1.svg"
-                />
+                /> */}
               </div>
             )}
           </div>

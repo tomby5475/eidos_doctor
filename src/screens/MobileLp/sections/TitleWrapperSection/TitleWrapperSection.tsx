@@ -18,7 +18,7 @@ export const TitleWrapperSection = (): JSX.Element => {
         so impressive that no company will be able to resist.
       </p>
 
-      <div className="relative aspect-[16/9] w-[361px] h-[420px] rounded-lg overflow-hidden">
+      <div className="relative aspect-[16/9] w-[361px] h-[420px] mt-4 rounded-[32px] overflow-hidden">
         <iframe
           src="https://www.loom.com/embed/5069daf9acc44b43a95586a281ce7826?sid=85761799-59e9-43e0-83aa-09517804f518"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

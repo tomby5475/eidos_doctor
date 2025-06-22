@@ -123,7 +123,7 @@ export const HowItWorksSection = (): JSX.Element => {
               <span className="font-bold text-[#e10091] text-sm leading-normal">
                 {step.number}
               </span>
-              <p className="flex-1 font-medium text-[#2d323c] text-base leading-normal">
+              <p className="flex-1 font-medium text-[#2d323c] text-base leading-tight tracking-normal">
                 {step.text}
               </p>
             </div>
