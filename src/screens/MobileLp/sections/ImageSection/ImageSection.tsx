@@ -2,9 +2,9 @@ import React from "react";
 
 // Define message data for better maintainability
 const messages = [
-  {
+    {
     sender: "other",
-    text: "Yes, please! Thank you! I'm sharing the link now ❤️",
+    text: "Okay, so I've been looking for a new job for three months now. I need your advice on my portfolio. Can you help me? 😊",
     avatar: "/photo-1.png",
   },
   {
@@ -13,7 +13,7 @@ const messages = [
   },
   {
     sender: "other",
-    text: "Okay, so I've been looking for a new job for three months now. I need your advice on my portfolio. Can you help me? 😊",
+    text: "Yes, please! Thank you! I'm sharing the link now ❤️",
     avatar: "/photo-1.png",
   },
   {

@@ -4,7 +4,7 @@ export const TitleSection = (): JSX.Element => {
   return (
     <section
       id="portfolio"
-      className="px-4 py-8 flex flex-col items-center gap-4 w-full"
+      className="px-4 py-8 flex flex-col items-center gap-4 w-full md:max-w-[1040px]"
     >
       <div className="relative">
         <p className="font-inter font-bold text-[16px] leading-[24px] tracking-normal text-center text-[#e10091]">
@@ -16,12 +16,17 @@ export const TitleSection = (): JSX.Element => {
           src="/vectorUnderline.svg"
         />
       </div>
-      <h1 className="font-['Asap',Helvetica] font-bold text-[#2d323c] text-[48px] text-center leading-tight">
+      {/* <h1 className="font-['Asap',Helvetica] font-bold text-[#2d323c] text-[48px] text-center leading-tight">
         Design Portfolio
         <br className="block md:hidden" />
         <span className="md:inline block">&nbsp;&amp; CV Doctor</span>
+      </h1> */}
+      <h1 className="font-['Asap',Helvetica] font-bold text-[#2d323c] text-[48px] text-center leading-tight">
+        <span className="block md:inline">
+          Design Portfolio&nbsp;&amp;&nbsp;CV Doctor
+        </span>
       </h1>
-      <p className="font-sans font-medium text-[#565f6e] text-base text-center leading-6">
+      <p className="font-sans font-medium text-[#565f6e] text-base text-center leading-6 md:w-[686px]">
         We&#39;re here to help you find your next design job. We&#39;ll give you
         a thorough and top-notch analysis of your portfolio and CV to make sure
         you land the job you want.
