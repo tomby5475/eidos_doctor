@@ -14,7 +14,7 @@ export const CoachSection = (): JSX.Element => {
     name: "Vadym Grin",
     position: "Head of Design at Atolls.",
     description:
-      "15 years of experience, 5 years of teaching. Author of Emotional Digital Design.",
+      " 15 years of experience, and 5 years of teaching. Author of Emotional Digital Design.",
     links: [
       { name: "LinkedIn", url: "https://www.linkedin.com/in/vadimgrin/" },
       { name: "Substack", url: "https://eidosdesign.substack.com/" },
@@ -24,7 +24,7 @@ export const CoachSection = (): JSX.Element => {
   };
 
   return (
-    <Card className="border-none shadow-none">
+    <Card className="border-none shadow-none flex flex-col md:flex-row">
       <CardContent className="flex flex-col items-start gap-6 pt-0 pb-4 px-4 w-full">
         <div className="flex items-start gap-4 w-full">
           <div className="flex-shrink-0">
@@ -40,10 +40,9 @@ export const CoachSection = (): JSX.Element => {
                 {coachData.name}
               </h3>
 
-              <p className="font-medium text-[#565f6e] text-sm leading-[21px] font-sans">
-                {coachData.position}
-                <br />
-                {coachData.description}
+              <p className="font-medium text-[#565f6e] text-sm leading-[21px] font-sans max-w-[281px] md:max-w-[398px]">
+                <span className="block md:inline">{coachData.position}</span>
+                <span className="block md:inline">{coachData.description}</span>
               </p>
             </div>
 

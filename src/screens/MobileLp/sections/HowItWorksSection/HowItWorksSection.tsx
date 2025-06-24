@@ -21,8 +21,6 @@ export const HowItWorksSection = (): JSX.Element => {
     {
       bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-10.svg",
-      iconClass: "w-[24px] h-[22px]",
-      iconPositionClass: "top-3 left-3",
       title: "Subscribe",
       content: (
         <>
@@ -49,8 +47,6 @@ export const HowItWorksSection = (): JSX.Element => {
     {
       bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-8.svg",
-      iconPositionClass: "top-3 left-3",
-      iconClass: "w-[24px] h-[22px]",
       title: "Request",
       content: (
         <>
@@ -70,8 +66,6 @@ export const HowItWorksSection = (): JSX.Element => {
     {
       bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-9.svg",
-      iconPositionClass: "top-3 left-3",
-      iconClass: "w-[24px] h-[22px]",
       title: "Feedback within 48 hours",
       content: (
         <>
@@ -89,8 +83,6 @@ export const HowItWorksSection = (): JSX.Element => {
     {
       bgImage: "/ellipse-8.svg",
       iconSrc: "/vector-3.svg",
-      iconPositionClass: "top-3 left-3",
-      iconClass: "w-[24px] h-[22px]",
       title: "Detailed report, video and action items",
       content: (
         <>
@@ -110,7 +102,7 @@ export const HowItWorksSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center gap-8 py-8 w-full">
       <div className="gap-6 px-4 w-full flex flex-col items-start">
-        <div>
+        <div className="flex flex-col lg:flex-row">
           {/* Steps Section */}
           <div className="flex flex-col items-start gap-6 w-full">
             <div className="flex items-center gap-4 w-full">
@@ -132,16 +124,15 @@ export const HowItWorksSection = (): JSX.Element => {
           </div>
 
           {/* Process Cards */}
-          <div className="flex flex-col items-start gap-4 w-full">
+          <div className="flex flex-col lg:flex-row items-start gap-4 w-full">
             {processCards.map((card, index) => (
               <Card key={index} className="w-full border-[#e6e6e6]">
-                <CardContent className="flex flex-col items-start gap-8 p-6">
+                <CardContent className="w-[361px] h-[237px] lg:w-[242px] lg:h-[285px] flex flex-col items-start gap-8 p-6">
                   <div
-                    className="relative w-12 h-12 bg-no-repeat bg-center bg-contain"
+                    className="relative w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
                     style={{ backgroundImage: `url(${card.bgImage})` }}
                   >
                     <img
-                      className={`absolute ${card.iconClass} ${card.iconPositionClass}`}
                       alt="Icon"
                       src={card.iconSrc}
                     />
@@ -159,54 +150,53 @@ export const HowItWorksSection = (): JSX.Element => {
             ))}
           </div>
         </div>
-        <div>
-        {/* Benefits Section */}
-        <div className="flex flex-col items-start gap-6 w-full">
-          <div className="flex items-center gap-4">
-            <h2 className="font-bold text-[#e10091] text-base leading-6 text-center">
-              What you&apos;ll get
-            </h2>
+        <div className="flex flex-col lg:flex-row ">
+          {/* Benefits Section */}
+          <div className="flex flex-col items-start gap-6 w-full">
+            <div className="flex items-center gap-4">
+              <h2 className="font-bold text-[#e10091] text-base leading-6 text-center">
+                What you&apos;ll get
+              </h2>
+            </div>
+
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-start gap-4 w-full">
+                <span className="font-bold text-[#e10091] text-sm leading-normal">
+                  +
+                </span>
+                <p className="flex-1 font-medium text-[#2d323c] text-base leading-normal">
+                  {benefit.text}
+                </p>
+              </div>
+            ))}
           </div>
 
-          {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-start gap-4 w-full">
-              <span className="font-bold text-[#e10091] text-sm leading-normal">
-                +
-              </span>
-              <p className="flex-1 font-medium text-[#2d323c] text-base leading-normal">
-                {benefit.text}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Benefit Cards */}
-        <div className="flex flex-col items-start gap-4 w-full">
-          {benefitCards.map((card, index) => (
-            <Card key={index} className="w-full border-[#e6e6e6]">
-              <CardContent className="flex flex-col items-start gap-8 p-6">
-                <div
-                  className="relative w-12 h-12 bg-no-repeat bg-center bg-contain"
-                  style={{ backgroundImage: `url(${card.bgImage})` }}
-                >
-                  <img
-                    className={`absolute ${card.iconClass} ${card.iconPositionClass}`}
-                    alt="Icon"
-                    src={card.iconSrc}
-                  />
-                </div>
-                <div className="flex flex-col items-start gap-4 w-full">
-                  <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">
-                    {card.title}
-                  </h3>
-                  <p className="w-full font-normal text-[#565f6e] text-sm leading-6">
-                    {card.content}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+          {/* Benefit Cards */}
+          <div className="flex flex-col lg:flex-row items-start gap-4 w-full">
+            {benefitCards.map((card, index) => (
+              <Card key={index} className="w-full border-[#e6e6e6]">
+                <CardContent className="w-[361px] h-[261px] lg:w-[242px] lg:h-[330px] flex flex-col items-start gap-8 p-6">
+                  <div
+                    className="relative w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
+                    style={{ backgroundImage: `url(${card.bgImage})` }}
+                  >
+                    <img
+                      alt="Icon"
+                      src={card.iconSrc}
+                    />
+                  </div>
+                  <div className="flex flex-col items-start gap-4 w-full">
+                    <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">
+                      {card.title}
+                    </h3>
+                    <p className="w-full font-normal text-[#565f6e] text-sm leading-6">
+                      {card.content}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
