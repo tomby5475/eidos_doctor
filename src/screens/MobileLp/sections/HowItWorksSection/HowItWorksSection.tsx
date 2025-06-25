@@ -101,8 +101,8 @@ export const HowItWorksSection = (): JSX.Element => {
 
   return (
     <section className="flex flex-col items-center gap-8 py-8 w-full">
-      <div className="gap-6 px-4 w-full flex flex-col items-start">
-        <div className="flex flex-col lg:flex-row">
+      <div className="gap-6 w-full flex flex-col items-start">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 w-full">
           {/* Steps Section */}
           <div className="flex flex-col items-start gap-6 w-full">
             <div className="flex items-center gap-4 w-full">
@@ -124,78 +124,79 @@ export const HowItWorksSection = (): JSX.Element => {
           </div>
 
           {/* Process Cards */}
-          <div className="flex flex-col lg:flex-row items-start gap-4 w-full">
-            {processCards.map((card, index) => (
-              <Card key={index} className="w-full border-[#e6e6e6]">
-                <CardContent className="w-[361px] h-[237px] lg:w-[242px] lg:h-[285px] flex flex-col items-start gap-8 p-6">
-                  <div
-                    className="relative w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
-                    style={{ backgroundImage: `url(${card.bgImage})` }}
-                  >
-                    <img
-                      alt="Icon"
-                      src={card.iconSrc}
-                    />
-                  </div>
-                  <div className="flex flex-col items-start gap-4 w-full">
-                    <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">
-                      {card.title}
-                    </h3>
-                    <p className="w-full font-normal text-sm leading-6 text-transparent">
-                      {card.content}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          {/* <div className="flex justify-center lg:justify-end items-start w-full"> */}
+          <div className="flex lg:justify-end items-start w-full">
+            <div className="flex flex-col lg:flex-row gap-4 w-full md:w-auto">
+              {processCards.map((card, index) => (
+                <Card key={index} className="border-[#e6e6e6]">
+                  <CardContent className="w-[361px] h-[237px] lg:w-[242px] lg:h-[285px] flex flex-col items-start gap-8 p-6">
+                    <div
+                      className="relative w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
+                      style={{ backgroundImage: `url(${card.bgImage})` }}
+                    >
+                      <img alt="Icon" src={card.iconSrc} />
+                    </div>
+                    <div className="flex flex-col items-start gap-4 w-full">
+                      <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">
+                        {card.title}
+                      </h3>
+                      <p className="w-full font-normal text-sm leading-6 text-[#565f6e]">
+                        {card.content}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row ">
-          {/* Benefits Section */}
-          <div className="flex flex-col items-start gap-6 w-full">
-            <div className="flex items-center gap-4">
-              <h2 className="font-bold text-[#e10091] text-base leading-6 text-center">
-                What you&apos;ll get
-              </h2>
+        <div className="gap-6 w-full flex flex-col items-start ">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 w-full">
+            {/* Benefits Section */}
+            <div className="flex flex-col items-start gap-6 w-full">
+              <div className="flex items-center gap-4">
+                <h2 className="font-bold text-[#e10091] text-base leading-6 text-center">
+                  What you&apos;ll get
+                </h2>
+              </div>
+
+              {benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-4 w-full">
+                  <span className="font-bold text-[#e10091] text-sm leading-normal">
+                    +
+                  </span>
+                  <p className="flex-1 font-medium text-[#2d323c] text-base leading-normal">
+                    {benefit.text}
+                  </p>
+                </div>
+              ))}
             </div>
 
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start gap-4 w-full">
-                <span className="font-bold text-[#e10091] text-sm leading-normal">
-                  +
-                </span>
-                <p className="flex-1 font-medium text-[#2d323c] text-base leading-normal">
-                  {benefit.text}
-                </p>
+            {/* Benefit Cards */}
+            <div className="flex lg:justify-end items-start w-full">
+              <div className="flex flex-col lg:flex-row lg:justify-end gap-4 w-full lg:w-auto">
+                {benefitCards.map((card, index) => (
+                  <Card key={index} className="w-full border-[#e6e6e6]">
+                    <CardContent className="w-[361px] h-[261px] lg:w-[242px] lg:h-[335px] flex flex-col items-start gap-8 p-6">
+                      <div
+                        className="w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
+                        style={{ backgroundImage: `url(${card.bgImage})` }}
+                      >
+                        <img alt="Icon" src={card.iconSrc} />
+                      </div>
+                      <div className="flex flex-col items-start gap-4 w-full">
+                        <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">
+                          {card.title}
+                        </h3>
+                        <p className="w-full font-normal text-[#565f6e] text-sm leading-6">
+                          {card.content}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
-            ))}
-          </div>
-
-          {/* Benefit Cards */}
-          <div className="flex flex-col lg:flex-row items-start gap-4 w-full">
-            {benefitCards.map((card, index) => (
-              <Card key={index} className="w-full border-[#e6e6e6]">
-                <CardContent className="w-[361px] h-[261px] lg:w-[242px] lg:h-[330px] flex flex-col items-start gap-8 p-6">
-                  <div
-                    className="relative w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
-                    style={{ backgroundImage: `url(${card.bgImage})` }}
-                  >
-                    <img
-                      alt="Icon"
-                      src={card.iconSrc}
-                    />
-                  </div>
-                  <div className="flex flex-col items-start gap-4 w-full">
-                    <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">
-                      {card.title}
-                    </h3>
-                    <p className="w-full font-normal text-[#565f6e] text-sm leading-6">
-                      {card.content}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            </div>
           </div>
         </div>
       </div>

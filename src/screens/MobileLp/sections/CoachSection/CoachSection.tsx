@@ -12,9 +12,9 @@ export const CoachSection = (): JSX.Element => {
   // Coach data that can be easily modified
   const coachData = {
     name: "Vadym Grin",
-    position: "Head of Design at Atolls.",
+    position: "Head of Design at Atolls. ",
     description:
-      " 15 years of experience, and 5 years of teaching. Author of Emotional Digital Design.",
+      "15 years of experience, and 5 years of teaching. Author of Emotional Digital Design.",
     links: [
       { name: "LinkedIn", url: "https://www.linkedin.com/in/vadimgrin/" },
       { name: "Substack", url: "https://eidosdesign.substack.com/" },
@@ -25,7 +25,7 @@ export const CoachSection = (): JSX.Element => {
 
   return (
     <Card className="border-none shadow-none flex flex-col md:flex-row">
-      <CardContent className="flex flex-col items-start gap-6 pt-0 pb-4 px-4 w-full">
+      <CardContent className="flex flex-col items-start gap-6 md:pl-0 pt-0 pb-4 w-full">
         <div className="flex items-start gap-4 w-full">
           <div className="flex-shrink-0">
             <Avatar className="w-16 h-16">
