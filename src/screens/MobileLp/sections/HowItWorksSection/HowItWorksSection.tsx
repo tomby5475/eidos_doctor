@@ -101,7 +101,7 @@ export const HowItWorksSection = (): JSX.Element => {
 
   return (
     <section className="flex flex-col items-center gap-8 py-8 w-full">
-      <div className="gap-6 w-full flex flex-col items-start">
+      <div className="gap-6 w-full flex flex-col items-start max-w-[361px] mx-auto lg:max-w-[1040px]">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 w-full">
           {/* Steps Section */}
           <div className="flex flex-col items-start gap-6 w-full">
@@ -124,7 +124,6 @@ export const HowItWorksSection = (): JSX.Element => {
           </div>
 
           {/* Process Cards */}
-          {/* <div className="flex justify-center lg:justify-end items-start w-full"> */}
           <div className="flex lg:justify-end items-start w-full">
             <div className="flex flex-col lg:flex-row gap-4 w-full md:w-auto">
               {processCards.map((card, index) => (
@@ -174,7 +173,7 @@ export const HowItWorksSection = (): JSX.Element => {
 
             {/* Benefit Cards */}
             <div className="flex lg:justify-end items-start w-full">
-              <div className="flex flex-col lg:flex-row lg:justify-end gap-4 w-full lg:w-auto">
+              <div className="flex flex-col lg:flex-row lg:justify-end gap-4 w-full md:w-auto">
                 {benefitCards.map((card, index) => (
                   <Card key={index} className="w-full border-[#e6e6e6]">
                     <CardContent className="w-[361px] h-[261px] lg:w-[242px] lg:h-[335px] flex flex-col items-start gap-8 p-6">
