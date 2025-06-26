@@ -18,7 +18,7 @@ export const SocialSection = (): JSX.Element => {
 
   return (
     <Card className="border-none shadow-none">
-      <CardContent className="flex flex-col items-center gap-4 pt-0 pb-8 px-4 w-full">
+      <CardContent className="flex flex-col items-center gap-4 pt-0 pb-8 px-4 w-full md:flex-row md:justify-center md:items-start md:gap-14">
         <div className="flex flex-col items-center gap-2">
           {/* Avatar row */}
           <div className="relative w-[204px] h-11">
@@ -51,31 +51,31 @@ export const SocialSection = (): JSX.Element => {
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col items-center justify-center">
-          {/* Star rating */}
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1">
-              {stars.map((star, index) => (
-                <img
-                  key={index}
-                  className="w-[19.02px] h-[18.09px]"
-                  alt={star.alt}
-                  src={star.src}
-                />
-              ))}
+  
+          <div className="flex flex-col items-center justify-center">
+            {/* Star rating */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-1">
+                {stars.map((star, index) => (
+                  <img
+                    key={index}
+                    className="w-[19.02px] h-[18.09px]"
+                    alt={star.alt}
+                    src={star.src}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* LinkedIn link */}
-          <div className="flex items-center gap-1">
-            <a
-              href="https://www.linkedin.com/in/vadimgrin/"
-              className="[font-family:'Inter',Helvetica] font-medium text-[#783cf5] text-sm text-center tracking-[0] leading-6 underline"
-            >
-              Learn more on LinkedIn
-            </a>
-          </div>
+            {/* LinkedIn link */}
+            <div className="flex items-center gap-1">
+              <a
+                href="https://www.linkedin.com/in/vadimgrin/"
+                className="[font-family:'Inter',Helvetica] font-medium text-[#783cf5] text-sm text-center tracking-[0] leading-6 underline"
+              >
+                Learn more on LinkedIn
+              </a>
+            </div>
         </div>
       </CardContent>
     </Card>
