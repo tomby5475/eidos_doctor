@@ -24,7 +24,7 @@ export const CoachSection = (): JSX.Element => {
   };
 
   return (
-    <Card className="border-none shadow-none flex flex-col md:flex-row">
+    <Card className="border-none shadow-none flex flex-col md:flex-row md:py-8">
       <CardContent className="flex flex-col items-start gap-6 md:pl-0 pt-0 pb-4 w-full">
         <div className="flex items-start gap-4 w-full">
           <div className="flex-shrink-0">

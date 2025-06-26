@@ -18,7 +18,7 @@ export const SocialSection = (): JSX.Element => {
 
   return (
     <Card className="border-none shadow-none">
-      <CardContent className="flex flex-col items-center gap-4 pt-0 pb-8 px-4 w-full md:flex-row md:justify-center md:items-start md:gap-14">
+      <CardContent className="flex flex-col items-center gap-4 pt-0 pb-8 px-4 w-full md:pt-8 md:flex-row md:justify-center md:items-start md:gap-14">
         <div className="flex flex-col items-center gap-2">
           {/* Avatar row */}
           <div className="relative w-[204px] h-11">

@@ -27,17 +27,17 @@ export const CommunitySection = (): JSX.Element => {
           to boost your career
         </h2>
 
-        <p className="w-full [font-family:'Inter',Helvetica] font-medium text-[#565f6e] text-base text-center leading-6">
+        <p className="w-full [font-family:'Inter',Helvetica] font-medium text-[#565f6e] text-base text-center leading-6 md:max-w-[617px]">
           We explore new ideas, embrace challenges, and discover what it takes
           to design a better, more thoughtful digital world.
         </p>
       </div>
 
       <Card className="relative w-full rounded-[32px] overflow-hidden [background:radial-gradient(50%_50%_at_50%_100%,rgba(89,50,158,1)_0%,rgba(39,12,85,1)_100%)] border-0">
-        <CardContent className="relative z-10 flex flex-col gap-8 p-8 pb-0">
+        <CardContent className="relative z-10 flex flex-col gap-8 p-8 lg:p-16 pb-0">
           <img className="w-[223.08px] h-10" alt="Logo" src="/logoWhite.svg" />
 
-          <div className="w-full max-w-[297px] flex flex-col gap-4">
+          <div className="w-full max-w-[297px] md:max-w-[424px] flex flex-col gap-4">
             {benefitsList.map((benefit, index) => (
               <div key={index} className="flex items-start gap-2 w-full">
                 <div className="w-6 h-6 flex items-center justify-center">
@@ -62,7 +62,10 @@ export const CommunitySection = (): JSX.Element => {
           </Button>
 
           <img
-            className="bottom-0 right-0 self-end mr-[-32px]"
+            className="bottom-0 right-0 self-end mr-[-32px] 
+                      md:absolute md:self-auto md:mr-0 
+                      md:w-[520px] md:h-[540px]
+                      "
             alt="New PLATO"
             src="/new-plato-3.png"
           />
