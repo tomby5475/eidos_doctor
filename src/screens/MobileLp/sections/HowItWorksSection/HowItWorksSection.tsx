@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 
 export const HowItWorksSection = (): JSX.Element => {
@@ -130,10 +129,13 @@ export const HowItWorksSection = (): JSX.Element => {
                 <Card key={index} className="border-[#e6e6e6]">
                   <CardContent className="w-[361px] h-[237px] lg:w-[242px] lg:h-[285px] flex flex-col items-start gap-8 p-6">
                     <div
-                      className="relative w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
+                      className="w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
                       style={{ backgroundImage: `url(${card.bgImage})` }}
                     >
-                      <img alt="Icon" src={card.iconSrc} />
+                      <img 
+                        alt="Icon" 
+                        src={card.iconSrc}
+                        className={`-translate-y-[1px] ${index === 1 ? 'translate-x-[1px]' : ''}`}/>
                     </div>
                     <div className="flex flex-col items-start gap-4 w-full">
                       <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">
@@ -181,7 +183,10 @@ export const HowItWorksSection = (): JSX.Element => {
                         className="w-12 h-12 bg-no-repeat bg-center bg-contain flex items-center justify-center"
                         style={{ backgroundImage: `url(${card.bgImage})` }}
                       >
-                        <img alt="Icon" src={card.iconSrc} />
+                        <img 
+                          alt="Icon" 
+                          src={card.iconSrc}
+                          className={`-translate-y-[1px] ${index === 1 ? 'translate-x-[1px]' : ''}`}/>
                       </div>
                       <div className="flex flex-col items-start gap-4 w-full">
                         <h3 className="font-bold text-[#2d323c] text-lg leading-normal font-['Asap',Helvetica]">

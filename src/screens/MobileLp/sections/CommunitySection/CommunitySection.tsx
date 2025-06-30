@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
@@ -63,11 +62,11 @@ export const CommunitySection = (): JSX.Element => {
 
           <img
             className="bottom-0 right-0 self-end mr-[-32px] 
-                      md:absolute md:self-auto md:mr-0 
-                      md:w-[520px] md:h-[540px]
-                      "
+             md:absolute md:self-auto md:mr-0 
+             md:w-[520px] md:h-[540px]"
             alt="New PLATO"
             src="/new-plato-3.png"
+            srcSet="/new-plato-3.png 1x, /new-plato@2x.png 2x"
           />
         </CardContent>
       </Card>

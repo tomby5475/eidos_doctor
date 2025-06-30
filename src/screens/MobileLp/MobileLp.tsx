@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../components/ui/button";
 import { CoachSection } from "./sections/CoachSection";
 import { CommunitySection } from "./sections/CommunitySection";
@@ -15,9 +14,9 @@ export const MobileLp = (): JSX.Element => {
       {/* Full-width background */}
       <header className="w-full bg-white shadow-[0px_1px_0px_#e4e4e4]">
        <div className="flex items-center justify-between px-4 py-3 w-full mx-auto max-w-[393px] lg:max-w-[1040px] lg:px-8">
-          <div className="relative w-32 h-[22.84px]">
+          <div className="relative w-[162px] h-[29px]">
             <img
-              className="h-[18px] object-contain"
+              className="h-[29px] object-contain"
               alt="Doctor"
               src="/logoLila.svg"
             />

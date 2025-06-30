@@ -1,5 +1,3 @@
-import React from "react";
-
 export const TitleWrapperSection = (): JSX.Element => {
   return (
     <section className="py-8 px-4 flex flex-col items-center gap-4">

@@ -1,5 +1,3 @@
-import React from "react";
-
 export const TitleSection = (): JSX.Element => {
   return (
     <section
