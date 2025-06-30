@@ -22,9 +22,9 @@ export const MobileLp = (): JSX.Element => {
             />
           </div>
           <nav className="hidden lg:flex gap-4 font-inter font-bold text-[14px] leading-[100%] tracking-normal text-[#322D2D]">
-            <a href="#portfolio">Design Portfolio & CV Doctor</a>
-            <a href="#interview">Interview Training</a>
-            <a href="#community">Design Community</a>
+            <a className="hover:text-[#5A5050]" href="#portfolio">Design Portfolio & CV Doctor</a>
+            <a className="hover:text-[#5A5050]" href="#interview">Interview Training</a>
+            <a className="hover:text-[#5A5050]" href="#community">Design Community</a>
           </nav>
           <Button asChild variant="custom">
             <a

@@ -88,7 +88,7 @@ export const InterviewsSection = (): JSX.Element => {
                 className={styles.buttonCustomLarge}
               >
                 <a
-                  href="https://eidosdesign.substack.com/"
+                  href="https://calendar.notion.so/meet/vadimgrin/7v93a4ocw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4"

@@ -52,7 +52,7 @@ export const CoachSection = (): JSX.Element => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[#322d2d] text-sm text-center leading-6 underline whitespace-nowrap font-sans"
+                  className="font-medium text-[#783CF5] text-sm text-center leading-6 underline hover:no-underline whitespace-nowrap font-sans"
                 >
                   {link.name}
                 </a>

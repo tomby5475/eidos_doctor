@@ -30,14 +30,13 @@ export const HowItWorksSection = (): JSX.Element => {
             <br />
             The only requirement is that you be a member of the{" "}
           </span>
-          <span className="font-medium text-[#783cf5] underline">
+          <span className="font-medium text-[#783cf5]">
             <a
               href="https://eidosdesign.substack.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#5a28c6]"
-            ></a>
-            Eidos Design
+              className="underline hover:no-underline"
+            >Eidos Design</a>
           </span>
           <span className="font-medium text-[#565f6e]"> community.</span>
         </>

@@ -70,7 +70,7 @@ export const SocialSection = (): JSX.Element => {
             <div className="flex items-center gap-1">
               <a
                 href="https://www.linkedin.com/in/vadimgrin/"
-                className="[font-family:'Inter',Helvetica] font-medium text-[#783cf5] text-sm text-center tracking-[0] leading-6 underline"
+                className="[font-family:'Inter',Helvetica] font-medium text-[#783cf5] text-sm text-center tracking-[0] leading-6 underline hover:no-underline"
               >
                 Learn more on LinkedIn
               </a>
