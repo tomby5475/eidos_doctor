@@ -13,7 +13,7 @@ export const CommunitySection = (): JSX.Element => {
   return (
     <section
       id="community"
-      className="flex flex-col items-center gap-8 px-4 py-8 w-full"
+      className="flex flex-col items-center gap-8 px-4 py-8 md:py-16 w-full"
     >
       <div className="flex flex-col items-center gap-4 w-full">
         <h3 className="w-full [font-family:'Inter',Helvetica] font-bold text-[#e10091] text-base text-center leading-6">

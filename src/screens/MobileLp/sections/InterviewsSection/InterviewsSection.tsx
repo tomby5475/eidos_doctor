@@ -8,21 +8,23 @@ export const InterviewsSection = (): JSX.Element => {
       id="interview"
       className="flex flex-col items-center gap-8 px-4 py-8 md:mt-8 md:pt-16 relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw] bg-crosses"
     >
-      <img
-        src="/starLila.svg"
-        alt="Star"
-        className="absolute w-4 h-4 top-[116px] left-[20%] hidden lg:block"
-      />
-      <img
-        src="/starLila.svg"
-        alt="Star"
-        className="absolute w-4 h-4 top-[165px] left-[75%] hidden lg:block"
-      />
-      <img
-        src="/starLila.svg"
-        alt="Star"
-        className="absolute w-4 h-4 top-[26px] left-[55%] hidden lg:block"
-      />
+      <div className="md:max-w-[1040px]">
+        <img
+          src="/starLila.svg"
+          alt="Star"
+          className="absolute w-4 h-4 top-[116px] left-[20%] hidden lg:block"
+        />
+        <img
+          src="/starLila.svg"
+          alt="Star"
+          className="absolute w-4 h-4 top-[165px] left-[75%] hidden lg:block"
+        />
+        <img
+          src="/starLila.svg"
+          alt="Star"
+          className="absolute w-4 h-4 top-[26px] left-[55%] hidden lg:block"
+        />
+      </div>
       <div className="max-w-[393px] md:max-w-[1040px] mx-auto">
         <header className="flex flex-col items-center gap-4 w-full">
           <p className="w-full font-['Inter',Helvetica] font-bold text-[#e10091] text-base text-center leading-6">
