@@ -34,13 +34,13 @@ export const CommunitySection = (): JSX.Element => {
 
       <Card className="relative w-full rounded-[32px] overflow-hidden [background:radial-gradient(50%_50%_at_50%_100%,rgba(89,50,158,1)_0%,rgba(39,12,85,1)_100%)] border-0">
         <CardContent className="relative z-10 flex flex-col gap-8 p-8 lg:p-16 pb-0">
-          <img className="w-[223.08px] h-10" alt="Logo" src="/logoWhite.svg" />
+          <img className="w-[223.08px] h-10" alt="Logo" src="/eidosdoc/logoWhite.svg" />
 
           <div className="w-full max-w-[297px] md:max-w-[424px] flex flex-col gap-4">
             {benefitsList.map((benefit, index) => (
               <div key={index} className="flex items-start gap-2 w-full">
                 <div className="w-6 h-6 flex items-center justify-center">
-                  <img src="/vector.svg" alt="checkIcon" />
+                  <img src="/eidosdoc/vector.svg" alt="checkIcon" />
                 </div>
                 <p className="flex-1 [font-family:'Inter',Helvetica] font-medium text-white text-sm leading-6">
                   {benefit}
@@ -51,7 +51,7 @@ export const CommunitySection = (): JSX.Element => {
 
           <Button className="w-[196px] h-[54px] p-4 bg-[#ffdb3e] text-[#191400] font-bold text-lg rounded-lg shadow-[inset_0px_2px_0px_#ffffff40] hover:bg-[#ffdb3e]/90">
             <a
-              href="https://eidosdesign.substack.com/"
+              href="https://eidosdesign.substack.com/subscribe"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4"
@@ -65,8 +65,8 @@ export const CommunitySection = (): JSX.Element => {
              md:absolute md:self-auto md:mr-0 
              md:w-[520px] md:h-[540px]"
             alt="New PLATO"
-            src="/new-plato-3.png"
-            srcSet="/new-plato-3.png 1x, /new-plato@2x.png 2x"
+            src="/eidosdoc/new-plato-3.png"
+            srcSet="/eidosdoc/new-plato-3.png 1x, /eidosdoc/new-plato@2x.png 2x"
           />
         </CardContent>
       </Card>

@@ -29,7 +29,7 @@
 @tailwind utilities;
 
 .bg-crosses {
-  background-image: url('/bgpattern.svg');
+  background-image: url('/eidosdoc/bgpattern.svg');
   background-repeat: repeat;
   background-size: 24px 24px;
 }

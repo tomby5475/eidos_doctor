@@ -14,17 +14,17 @@ export const InterviewsSection = (): JSX.Element => {
             Next step
           </p>
           <img
-            src="/starLila.svg"
+            src="/eidosdoc/starLila.svg"
             alt="Star"
             className="absolute w-4 h-4 top-[50px] left-[10%] hidden lg:block"
           />
           <img
-            src="/starLila.svg"
+            src="/eidosdoc/starLila.svg"
             alt="Star"
             className="absolute w-4 h-4 top-[100px] left-[85%] hidden lg:block"
           />
           <img
-            src="/starLila.svg"
+            src="/eidosdoc/starLila.svg"
             alt="Star"
             className="absolute w-4 h-4 top-[-30px] left-[57%] hidden lg:block"
           />
@@ -42,7 +42,7 @@ export const InterviewsSection = (): JSX.Element => {
         </header>
 
         <video
-          src="/consultation.webm"
+          src="/eidosdoc/consultation.webm"
           autoPlay
           loop
           muted

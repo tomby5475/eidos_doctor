@@ -19,7 +19,7 @@ export const CoachSection = (): JSX.Element => {
       { name: "Substack", url: "https://eidosdesign.substack.com/" },
       { name: "Book", url: "https://bit.ly/3ZsUQS4" },
     ],
-    avatar: "/ellipse-3.png",
+    avatar: "/eidosdoc/ellipse-3.png",
   };
 
   return (
@@ -64,7 +64,7 @@ export const CoachSection = (): JSX.Element => {
       <div className="flex justify-center pb-6">
         <Button asChild variant="custom" className={styles.buttonCustomLarge}>
           <a
-            href="https://eidosdesign.substack.com/"
+            href="https://eidosdesign.substack.com/subscribe"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 mt-8"

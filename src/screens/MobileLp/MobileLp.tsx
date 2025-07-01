@@ -18,7 +18,7 @@ export const MobileLp = (): JSX.Element => {
             <img
               className="h-[29px] object-contain"
               alt="Doctor"
-              src="/logoLila.svg"
+              src="/eidosdoc/logoLila.svg"
             />
           </div>
           <nav className="hidden lg:flex gap-4 font-inter font-bold text-[14px] leading-[100%] tracking-normal text-[#322D2D]">
@@ -28,7 +28,7 @@ export const MobileLp = (): JSX.Element => {
           </nav>
           <Button asChild variant="custom">
             <a
-              href="https://eidosdesign.substack.com/"
+              href="https://eidosdesign.substack.com/subscribe"
               target="_blank"
               rel="noopener noreferrer"
               className="px-3"

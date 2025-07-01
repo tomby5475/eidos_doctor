@@ -5,17 +5,17 @@ export const TitleSection = (): JSX.Element => {
       className="relative px-4 py-8 md:py-16 flex flex-col items-center gap-4 w-full md:max-w-[1040px]"
     >
        <img
-        src="/starLila.svg"
+        src="/eidosdoc/starLila.svg"
         alt="Star"
         className="absolute w-4 h-4 top-[116px] left-[12%] hidden lg:block"
       />
       <img
-        src="/starLila.svg"
+        src="/eidosdoc/starLila.svg"
         alt="Star"
         className="absolute w-4 h-4 top-[161px] left-[90%] hidden lg:block"
       />
       <img
-        src="/starLila.svg"
+        src="/eidosdoc/starLila.svg"
         alt="Star"
         className="absolute w-4 h-4 top-[42px] left-[70%] hidden lg:block"
       />
@@ -26,7 +26,7 @@ export const TitleSection = (): JSX.Element => {
         <img
           className="absolute max-w-none h-[7px] top-[24px] left-[73%] -translate-x-1/2 w-[115px]"
           alt="Decorative underline"
-          src="/stroke.svg"
+          src="/eidosdoc/stroke.svg"
         />
       </div>
       <h1 className="font-['Asap',Helvetica] font-bold text-[#2d323c] text-[48px] text-center leading-tight">

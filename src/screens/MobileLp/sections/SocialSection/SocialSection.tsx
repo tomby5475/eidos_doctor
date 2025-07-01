@@ -4,16 +4,16 @@ import { Card, CardContent } from "../../../../components/ui/card";
 export const SocialSection = (): JSX.Element => {
   // Data for avatars
   const avatars = [
-    { src: "/ellipse-3-1.png", alt: "User avatar" },
-    { src: "/ellipse-3-2.png", alt: "User avatar" },
-    { src: "/ellipse-3-3.png", alt: "User avatar" },
-    { src: "/ellipse-3-4.png", alt: "User avatar" },
-    { src: "/ellipse-3-5.png", alt: "User avatar" },
-    { src: "/ellipse-3-6.png", alt: "User avatar" },
+    { src: "/eidosdoc/ellipse-3-1.png", alt: "User avatar" },
+    { src: "/eidosdoc/ellipse-3-2.png", alt: "User avatar" },
+    { src: "/eidosdoc/ellipse-3-3.png", alt: "User avatar" },
+    { src: "/eidosdoc/ellipse-3-4.png", alt: "User avatar" },
+    { src: "/eidosdoc/ellipse-3-5.png", alt: "User avatar" },
+    { src: "/eidosdoc/ellipse-3-6.png", alt: "User avatar" },
   ];
 
   // Data for stars
-  const stars = Array(5).fill({ src: "/star-1.svg", alt: "Star" });
+  const stars = Array(5).fill({ src: "/eidosdoc/star-1.svg", alt: "Star" });
 
   return (
     <Card className="border-none shadow-none">
@@ -43,7 +43,7 @@ export const SocialSection = (): JSX.Element => {
             <img
               className="w-[19.73px] h-3"
               alt="Vector"
-              src="/vector-2-1.svg"
+              src="/eidosdoc/vector-2-1.svg"
             />
             <div className="[font-family:'Indie_Flower',Helvetica] font-normal text-[#565f6e] text-lg tracking-[0] leading-[22px]">
               Yes, they are real

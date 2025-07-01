@@ -2,7 +2,7 @@ const messages = [
   {
     sender: "other",
     text: "Okay, so I've been looking for a new job for three months now. I need your advice on my portfolio. Can you help me? 😊",
-    avatar: "/photo-1.png",
+    avatar: "/eidosdoc/photo-1.png",
   },
   {
     sender: "self",
@@ -11,7 +11,7 @@ const messages = [
   {
     sender: "other",
     text: "Yes, please! Thank you! I'm sharing the link now ❤️",
-    avatar: "/photo-1.png",
+    avatar: "/eidosdoc/photo-1.png",
   },
   {
     sender: "self",

@@ -18,8 +18,8 @@ export const HowItWorksSection = (): JSX.Element => {
   // Cards data
   const processCards = [
     {
-      bgImage: "/ellipse-8.svg",
-      iconSrc: "/vector-10.svg",
+      bgImage: "/eidosdoc/ellipse-8.svg",
+      iconSrc: "/eidosdoc/vector-10.svg",
       title: "Subscribe",
       content: (
         <>
@@ -32,7 +32,7 @@ export const HowItWorksSection = (): JSX.Element => {
           </span>
           <span className="font-medium text-[#783cf5]">
             <a
-              href="https://eidosdesign.substack.com/"
+              href="https://eidosdesign.substack.com/subscribe"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:no-underline"
@@ -43,8 +43,8 @@ export const HowItWorksSection = (): JSX.Element => {
       ),
     },
     {
-      bgImage: "/ellipse-8.svg",
-      iconSrc: "/vector-8.svg",
+      bgImage: "/eidosdoc/ellipse-8.svg",
+      iconSrc: "/eidosdoc/vector-8.svg",
       title: "Request",
       content: (
         <>
@@ -62,8 +62,8 @@ export const HowItWorksSection = (): JSX.Element => {
 
   const benefitCards = [
     {
-      bgImage: "/ellipse-8.svg",
-      iconSrc: "/vector-9.svg",
+      bgImage: "/eidosdoc/ellipse-8.svg",
+      iconSrc: "/eidosdoc/vector-9.svg",
       title: "Feedback within 48 hours",
       content: (
         <>
@@ -79,8 +79,8 @@ export const HowItWorksSection = (): JSX.Element => {
       ),
     },
     {
-      bgImage: "/ellipse-8.svg",
-      iconSrc: "/vector-3.svg",
+      bgImage: "/eidosdoc/ellipse-8.svg",
+      iconSrc: "/eidosdoc/vector-3.svg",
       title: "Detailed report, video and action items",
       content: (
         <>
